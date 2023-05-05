@@ -75,8 +75,8 @@ DO_WHILE_LOOP				; start do while loop
 		OUT			; output space to console
 	END_Output_Space_3		; end of branch
 	
-    ADD	R2, R2, #-1			; decrement do while loop counter
-    BRp	DO_WHILE_LOOP			; R2 > 0 do while loop 
+   	 ADD	R2, R2, #-1		; decrement do while loop counter
+    	BRp	DO_WHILE_LOOP 		; R2 > 0 do while loop 
 
 END_DO_WHILE_LOOP			; terminate do while loop	
 
@@ -89,7 +89,7 @@ HALT
 ;Data
 ;---------------
 
-Value_addr	.FILL xAB00		; The address where value to be displayed is stored
+Value_addr	.FILL   xAB00		; The address where value to be displayed is stored
 DEC_16		.FILL	#16		; number of bits 
 CHAR_DEC_1	.FILL	#49		; ascii character of the digit 1
 CHAR_DEC_0	.FILL	#48		; ascii character of the digit 0 
@@ -98,7 +98,7 @@ Space		.FILL	#32		; dec 32 represents space in ascii code
 ;=============================================================================
 
 .ORIG xAB00				; Remote data
-Value .FILL xABCD			; <----!!!NUMBER TO BE DISPLAYED AS BINARY!!! Note: label is redundant.
+Value 		.FILL 	xABCD 		; <----!!!NUMBER TO BE DISPLAYED AS BINARY!!! Note: label is redundant.
 ;---------------	
 ;END of PROGRAM
 ;---------------	
