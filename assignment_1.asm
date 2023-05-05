@@ -14,9 +14,9 @@
 ;=========================================================================
 
 ;---------------------------------------------------------
-;REG VALUES			R0	R1	R2	R3	R4	R5	R6	R7	
+;REG VALUES		R0	R1	R2	R3	R4	R5	R6	R7	
 ;---------------------------------------------------------
-;Pre-Loop			0	6	12	0	0	0	0	1168
+;Pre-Loop		0	6	12	0	0	0	0	1168
 ;
 ;Iteration 01		0	5	12	12	0	0	0	1168
 ;Iteration 02		0	4	12	24	0	0	0	1168
@@ -35,8 +35,8 @@ LD R2,	DEC_12						;R2<--12
 LD R3,	DEC_0						;R3<--0
 
 DO_While	ADD R3, R3, R2			;R3<--R3+R2
-			ADD R1, R1, #-1			;R1<--R1-1
-			BRp DO_While			;if(LMR>0)go to DO_WHILE
+		ADD R1, R1, #-1			;R1<--R1-1
+		BRp DO_While			;if(LMR>0)go to DO_WHILE
 			
 HALT								;Terminate the program	
 ;---------------	
