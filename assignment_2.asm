@@ -102,15 +102,15 @@ HALT					; Stop execution of program
 ; String to prompt user. Note: already includes terminating newline!
 intro 		.STRINGZ	"ENTER two numbers (i.e '0'....'9')\n" 	; prompt string - use with LEA, followed by PUTS.
 
-newline 	.FILL '\n'			; newline character - use with LD followed by OUT
+newline 	.FILL 		'\n'		; newline character - use with LD followed by OUT
 
 minus		.STRINGZ	" - "		; outputs the minus sign into the equation, use with LEA fellowed by PUTS.
 equal		.STRINGZ	" = " 		; outputs the equal sign into the equation, use with LEA fellowed by PUTS.
-minus_sign	.FILL	x2D
+minus_sign	.FILL		x2D
 
-ascii_to_number	.FILL 	xf			; AND the ascii code with x0f (00001111) to convert to a number 
+ascii_to_number	.FILL 		xf		; AND the ascii code with x0f (00001111) to convert to a number 
 
-num_to_ascii	.FILL	x30			; add to number to get ascii character (0011 0000)
+num_to_ascii	.FILL		x30		; add to number to get ascii character (0011 0000)
 
 ;---------------	
 ;END of PROGRAM
