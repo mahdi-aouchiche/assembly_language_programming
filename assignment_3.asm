@@ -13,22 +13,22 @@
 ;
 ;=========================================================================
 
-.ORIG x3000			; Program begins here
+.ORIG x3000				; Program begins here
 
 ;-------------
 ;Instructions
 ;-------------
 
-LD 	R6, Value_addr		; R6 <-- pointer to value to be displayed as binary
-LDR 	R1, R6, #0 		; R1 <-- value to be displayed as binary 
+LD 	R6, Value_addr			; R6 <-- pointer to value to be displayed as binary
+LDR 	R1, R6, #0 			; R1 <-- value to be displayed as binary 
 
 ;-------------------------------
 ;INSERT CODE STARTING FROM HERE
 ;--------------------------------
 
-LD 	R2, DEC_16		; set to decrement do while loop 
+LD 	R2, DEC_16			; set to decrement do while loop 
 
-DO_WHILE_LOOP			; start do while loop 
+DO_WHILE_LOOP				; start do while loop 
 
 	ADD	R1, R1, #0		; set test to branch
 
